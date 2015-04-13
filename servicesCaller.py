@@ -12,14 +12,6 @@ class ServicesCaller():
 			if parameterizedUrl[-1] != '?':
 				parameterizedUrl += '&'
 			parameterizedUrl += key + "=" + parametters[key]
-		print ("-parameterizedUrl-")
-		print (parameterizedUrl)
-		print ("-requests.get(url)-")
-		print (requests.get(url))
-		jsonResult = (requests.get(url)).text
-		print ("-jsonResult-")
-		print (jsonResult)
+		jsonResult = (requests.get(parameterizedUrl)).text
 		pyDictionaryResult = json.loads(jsonResult)
-		print ("-pyDictionaryResult-")
-		print (pyDictionaryResult)
 		return pyDictionaryResult

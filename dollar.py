@@ -9,4 +9,4 @@ class Dollar():
 		
 	def askDollar():
 		pyDictionary = servicesCaller.callJsonService("http://ws.geeklab.com.ar/dolar/get-dolar-json.php")
-		print ("Precio del dolar oficial: $:" + pyDictionary['libre'] + "\nPrecio del dolar Blue: $" + pyDictionary['blue'])
+		return ("Precio del dolar oficial: $:" + pyDictionary['libre'] + "\nPrecio del dolar Blue: $" + pyDictionary['blue'])
