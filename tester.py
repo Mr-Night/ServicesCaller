@@ -6,7 +6,9 @@ from servicesCaller import ServicesCaller
 dollar = Dollar
 print ("dolar:")
 print (Dollar.askDollar())
+print ("--------")
 
 weather = Weather
 print ("Clima actual:")
 print (weather.askCurrentWeather())
+print ("-------")
