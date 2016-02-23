@@ -3,12 +3,137 @@ from weather import Weather
 #The next line must be in each ServiceCaller, finished the class it must be deleted from here
 from servicesCaller import ServicesCaller
 
-dollar = Dollar
+dollar = Dollar()
 print ("dolar:")
-print (Dollar.askDollar())
+dollarResult = dollar.askDollar()
+print (dollarResult)
 print ("--------")
 
 weather = Weather
 print ("Clima actual:")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 print (weather.askCurrentWeather())
 print ("-------")

@@ -16,9 +16,14 @@ class Weather():
 
 	def askCurrentWeather():
 		weather = servicesCaller.callJsonService("http://api.openweathermap.org/data/2.5/weather", defaultParametters)
-		print (weather)
-		return "Clima actual de " + weather['name'] + ", " + weather['sys']['country'] + "\nTemperatura: " + weather['main']['temp'] + " grados celcius. \nHumedad:" + weather['main']
-
+		print(weather)
+        #city = weather['name']
+        #country = weather['sys']['country']
+        #temperature = weather['main']['temp']
+        #humidity = weather['main']
+        #feelsLike = calculateFeelsLike()
+		#return "Clima actual de " + weather['name'] + ", " + weather['sys']['country'] + "\nTemperatura: " + weather['main']['temp'] + " grados celcius.\nHumedad: " + weather['main'] + "%\nSensacion Termica: "
+        
 	def calculateFeelsLike(temperature, windSpeed):
 		feelsLike = 33 + (temperature- 33)*(0.474 + 0.454 * math.sqrt((windSpeed))-0.0454*windSpeed)
 		return feelsLike
